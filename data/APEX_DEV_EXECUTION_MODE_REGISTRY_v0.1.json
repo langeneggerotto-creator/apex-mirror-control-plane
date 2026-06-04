@@ -1,0 +1,110 @@
+{
+  "registry_id": "APEX-DEV-EXECUTION-MODE-0001",
+  "registry_version": "0.1.0",
+  "status": "LOCKED_POLICY_REGISTERED",
+  "default_iteration_mode": "VERIFIED_VERTICAL_SLICE_FIRST",
+  "conditional_scale_mode": {
+    "display_name": "APEX 1M / 🧪Ⓥ1M🅾️♾️💯",
+    "default_status": "INACTIVE_LOCKED_PENDING_VERIFIED_VERTICAL_SLICE",
+    "activation_rule": "Activate only after a bounded vertical slice demonstrates a real end-to-end loop, recorded tests, value signal, evidence route, bounded risk/cost and human-approved scale decision.",
+    "truth_boundary": "APEX 1M is a conditional scaled-iteration mode; it does not authorize literal one-million execution, production deployment, external writes or unbounded cost without explicit approved scope."
+  },
+  "module_display_requirements": [
+    "iteration_mode",
+    "vertical_slice_id",
+    "slice_status",
+    "benefit_tested",
+    "evidence_status",
+    "known_limitations",
+    "scale_eligibility",
+    "operator_choice",
+    "next_action"
+  ],
+  "slice_status_values": [
+    "NOT_DEFINED",
+    "DEFINED_CANDIDATE",
+    "RUN_RECORDED",
+    "REPAIR_REQUIRED",
+    "VERIFIED_IN_SCOPE",
+    "SCALE_CANDIDATE",
+    "HOLD",
+    "STOP",
+    "ROLLBACK"
+  ],
+  "operator_choice_values": [
+    "STAY",
+    "SWITCH",
+    "HOLD",
+    "STOP",
+    "ROLLBACK",
+    "REVIEW_SCALE"
+  ],
+  "initial_vertical_slice_candidates": [
+    {
+      "vertical_slice_id": "VS-DEV-CONSOLE-001",
+      "module": "APEX Mirror Control Plane",
+      "scope": "One module node → detail drawer → direction selection → exported task packet → evidence record",
+      "benefit_tested": "Whether the APEX Development Console can guide controlled module work visibly and truthfully.",
+      "slice_status": "DEFINED_CANDIDATE",
+      "scale_eligibility": "INACTIVE"
+    },
+    {
+      "vertical_slice_id": "VS-LRN-PILOT-001",
+      "module": "APEX Learning Center",
+      "scope": "One matched learning task tested across Human-only, AI-only and Human+AI conditions",
+      "benefit_tested": "Whether Human+AI improves the selected learning result within the bounded pilot.",
+      "slice_status": "DEFINED_CANDIDATE",
+      "scale_eligibility": "INACTIVE"
+    },
+    {
+      "vertical_slice_id": "VS-OCODE-001",
+      "module": "OCODE",
+      "scope": "One supported source input → OCODE operational map → web target candidate → behavior comparison receipt",
+      "benefit_tested": "Whether the first bridging-code path preserves defined expected behavior within scope.",
+      "slice_status": "DEFINED_CANDIDATE",
+      "scale_eligibility": "INACTIVE"
+    }
+  ],
+  "recommended_first_slice": {
+    "vertical_slice_id": "VS-DEV-CONSOLE-001",
+    "reason": "It operationalizes the on-screen APEX Development map and provides visible status, direction choice and evidence routing for every later module slice.",
+    "decision_status": "RECOMMENDED_PENDING_OPERATOR_ACTIVATION"
+  },
+  "linked_policy_artifacts": [
+    {
+      "repository": "apex-iteration-automater-os",
+      "path": "policies/ITERATION_OPERATION_VERIFIED_VERTICAL_SLICE_FIRST_v1.0.md"
+    },
+    {
+      "repository": "apex-evidence-ledger",
+      "path": "policies/VERIFIED_VERTICAL_SLICE_SCALE_EVIDENCE_GATE_v1.0.md"
+    },
+    {
+      "repository": "apex-mirror-control-plane",
+      "path": "policies/ITERATION_MODE_VISIBILITY_VERIFIED_VERTICAL_SLICE_FIRST_v1.0.md"
+    }
+  ],
+  "final_direction_stack": [
+    {
+      "rank": 1,
+      "direction": "Execute VS-DEV-CONSOLE-001 as the first proof-bearing vertical slice.",
+      "gate": "Clickable module-to-task-packet flow passes named tests and records evidence."
+    },
+    {
+      "rank": 2,
+      "direction": "Add VVSF and scale-eligibility fields to the interactive console prototype.",
+      "gate": "All active module cards render the required state fields without unsupported scale claims."
+    },
+    {
+      "rank": 3,
+      "direction": "Create the standardized vertical-slice evidence receipt schema in the Evidence Ledger.",
+      "gate": "Receipt validates before any module is shown as scale candidate."
+    },
+    {
+      "rank": 4,
+      "direction": "Sandbox a visual evidence-lit bridge that illuminates scale readiness only as gates are proven.",
+      "gate": "Display-only innovation; no autonomous activation."
+    }
+  ],
+  "symbolic_signature": "🔮🧭🧿🅾️♾️💯"
+}
