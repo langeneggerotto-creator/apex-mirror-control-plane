@@ -1,0 +1,186 @@
+{
+  "config_id": "SCR-DEV-001-RADIAL-CONSOLE-CONFIG",
+  "version": "0.2.0",
+  "screen_id": "SCR-DEV-001",
+  "name": "APEX Development Radial Module Architect Console",
+  "status": "SPECIFIED_PUBLIC_SAFE_PRE_PROTOTYPE",
+  "truth_boundary": "This configuration drives a symbolic human-control interface. It does not represent biometric sensing, consciousness measurement, live module execution, or permission for scaled automation.",
+  "operating_policy": {
+    "default_iteration_mode": "VERIFIED_VERTICAL_SLICE_FIRST",
+    "scale_mode": "APEX_1M",
+    "scale_symbol": "🧪Ⓥ1M🅾️♾️💯",
+    "scale_status": "LOCKED_UNTIL_VERTICAL_SLICE_EVIDENCE_AND_OPERATOR_APPROVAL",
+    "vertical_slice_id": "VS-DEV-CONSOLE-001"
+  },
+  "center_core": {
+    "node_id": "NODE-CORE",
+    "label": "APEX DEVELOPMENT / HUMAN CONTROL CORE",
+    "purpose": "Coordinate, inspect, approve, redirect, hold, stop and evolve APEX module development.",
+    "required_fields": [
+      "active_iteration_mode",
+      "active_vertical_slice",
+      "portfolio_truth_status",
+      "apex_1m_scale_state",
+      "operator_control_state",
+      "evidence_maturity"
+    ]
+  },
+  "module_pods": [
+    {
+      "node_id": "NODE-APA",
+      "module_id": "MOD-APA-001",
+      "label": "APEX Perfect Analysis",
+      "position": "upper_left",
+      "purpose": "Determine truth, gaps, options and intended benefit.",
+      "status": "SPECIFIED",
+      "repository_route": "apex-mirror-control-plane/modules/perfect-analysis"
+    },
+    {
+      "node_id": "NODE-PHD",
+      "module_id": "MOD-PHD-001",
+      "label": "APEX PhD Research",
+      "position": "top_center",
+      "purpose": "Establish sourced evidence and verified knowledge.",
+      "status": "SPECIFIED",
+      "repository_route": "apex-mirror-control-plane/modules/phd-research"
+    },
+    {
+      "node_id": "NODE-LRN",
+      "module_id": "MOD-LRN-001",
+      "label": "APEX Learning Center",
+      "position": "upper_right",
+      "purpose": "Run learning and Human/AI proof pathways.",
+      "status": "REPOSITORY_CREATED_FOUNDATION_PENDING",
+      "repository_route": "apex-learning-center"
+    },
+    {
+      "node_id": "NODE-ANM",
+      "module_id": "MOD-ANM-001",
+      "label": "APEX Analytics Mirror Module",
+      "position": "lower_right",
+      "purpose": "Deliver the business-facing analytics and governance experience.",
+      "status": "PROTOTYPE_ARTIFACT_EXISTS_LOCALLY",
+      "repository_route": "apex-analytics-mirror-sharepoint",
+      "selected_for_first_vertical_slice": true
+    },
+    {
+      "node_id": "NODE-TWB",
+      "module_id": "MOD-TWB-001",
+      "label": "APEX Test Workbench",
+      "position": "bottom_center",
+      "purpose": "Validate, stress-test, repair and control promotion.",
+      "status": "SPECIFIED",
+      "repository_route": "apex-evidence-ledger/tests-workbench"
+    },
+    {
+      "node_id": "NODE-DIM",
+      "module_id": "MOD-DIM-001",
+      "label": "APEX Dimensions & Fields",
+      "position": "lower_left",
+      "purpose": "Map layers, relationships, unknowns and model quality.",
+      "status": "DESIGN_METHOD_ADOPTED",
+      "repository_route": "apex-mirror-control-plane/modules/dimensions-fields"
+    }
+  ],
+  "progress_rings": [
+    {
+      "ring_id": "R1",
+      "label": "Development Stage",
+      "segments": ["Observe", "Define", "Model", "Build", "Verify", "Preserve", "Decide", "Improve"]
+    },
+    {
+      "ring_id": "R2",
+      "label": "Truth Status",
+      "segments": ["Specified", "Prototype", "Tested", "Blocked", "Aspirational", "Verified in Scope"]
+    },
+    {
+      "ring_id": "R3",
+      "label": "Evidence",
+      "segments": ["Artifact", "Test", "Commit", "Limitation", "Approval", "Receipt"]
+    },
+    {
+      "ring_id": "R4",
+      "label": "Direction and Benefit",
+      "segments": ["Stay", "Switch", "Hold", "Stop", "Innovate", "Scale Review"]
+    },
+    {
+      "ring_id": "R5",
+      "label": "Scale Eligibility",
+      "segments": ["VS Defined", "VS Running", "VS Verified", "Scale-10", "Scale-100", "APEX-1M Review"]
+    }
+  ],
+  "view_modes": [
+    {"view_id": "VIEW-01", "label": "Architecture", "effect": "Show radial module constellation, relationship lines and repository badges."},
+    {"view_id": "VIEW-02", "label": "Features", "effect": "Expand pods into P0/P1 feature cards and progress states."},
+    {"view_id": "VIEW-03", "label": "Dimensions", "effect": "Overlay 0D-to-17D coverage for the selected module and expose gaps."},
+    {"view_id": "VIEW-04", "label": "Evidence", "effect": "Emphasize supported tests, receipts and blockers; fade unsupported claims."},
+    {"view_id": "VIEW-05", "label": "Roadmap", "effect": "Arrange modules along current-state to proof-bearing direction path."},
+    {"view_id": "VIEW-06", "label": "Vertical Slice", "effect": "Focus on input, process, output, evidence, decision and scale gate."}
+  ],
+  "decision_controls": ["STAY", "SWITCH", "HOLD", "STOP", "INNOVATE"],
+  "scale_gates": [
+    {"gate_id": "VS-G01", "condition": "Bounded end-to-end vertical slice is selected and defined.", "status": "TO_PROVE"},
+    {"gate_id": "VS-G02", "condition": "Falsifiable acceptance criteria exist.", "status": "SPECIFIED"},
+    {"gate_id": "VS-G03", "condition": "Runnable artifact or output has been produced.", "status": "TO_PROVE"},
+    {"gate_id": "VS-G04", "condition": "Functional tests have been performed and recorded.", "status": "TO_PROVE"},
+    {"gate_id": "VS-G05", "condition": "Benefit, risk and repeatability have been reviewed.", "status": "TO_PROVE"},
+    {"gate_id": "VS-G06", "condition": "Evidence receipt and repository route are present.", "status": "PARTIAL"},
+    {"gate_id": "VS-G07", "condition": "Operator approval for any scale review is recorded.", "status": "TO_PROVE"},
+    {"gate_id": "VS-G08", "condition": "No claim exceeds tested scope.", "status": "REQUIRED_ALWAYS"}
+  ],
+  "first_vertical_slice": {
+    "slice_id": "VS-DEV-CONSOLE-001",
+    "selected_module": "MOD-ANM-001",
+    "flow": [
+      "Select APEX Analytics Mirror module pod",
+      "Open module inspector drawer",
+      "View current truth status and missing proof",
+      "View Final Direction Stack",
+      "Select STAY, SWITCH, HOLD, STOP or INNOVATE",
+      "Export bounded task packet",
+      "Generate evidence-receipt candidate"
+    ],
+    "acceptance_tests": [
+      "VS-T001: Radial canvas renders center core and six correct module pods.",
+      "VS-T002: Analytics Mirror pod opens correct inspector content.",
+      "VS-T003: Truth status and one missing-proof statement are visible.",
+      "VS-T004: Direction decision can be selected and changed prior to export.",
+      "VS-T005: Task packet includes module, direction, scope, close gate and evidence route.",
+      "VS-T006: Evidence candidate uses bounded status rather than unsupported claims.",
+      "VS-T007: APEX 1M remains visibly locked.",
+      "VS-T008: Primary flow supports keyboard navigation."
+    ]
+  },
+  "visual_style": {
+    "background": "deep_navy_cosmic",
+    "structure": "cyan_blue",
+    "approved_direction": "warm_gold",
+    "future_aspirational": "purple_labeled",
+    "verified_tested": "green_teal",
+    "risk_blocked": "amber_red",
+    "human_core": "symbolic_non_biometric_luminous_center"
+  },
+  "final_direction_stack": [
+    {
+      "rank": 1,
+      "direction": "Build VS-DEV-CONSOLE-001 as a local interactive radial-console prototype focused on Analytics Mirror.",
+      "gate": "VS-T001 through VS-T008 recorded."
+    },
+    {
+      "rank": 2,
+      "direction": "Render the radial UI from this normalized configuration contract rather than hard-coded visual content.",
+      "gate": "Configuration fields validate and render correctly."
+    },
+    {
+      "rank": 3,
+      "direction": "Generate Evidence Ledger receipt and preserve visible APEX 1M lock state.",
+      "gate": "No unsupported promotion or scale state appears."
+    },
+    {
+      "rank": 4,
+      "direction": "Sandbox animated ring illumination as modules earn evidence.",
+      "gate": "Usability and truth-display review only; no automated execution."
+    }
+  ],
+  "next_smallest_human_control_improvement": "Build only the one-pod vertical slice with explicit evidence and scale-lock visibility before expanding the radial console."
+}
